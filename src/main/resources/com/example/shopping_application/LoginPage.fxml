@@ -10,65 +10,60 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shopping_app_proj.LoginPageController">
-    <children>
-        <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
-            <children>
-                <AnchorPane prefHeight="478.0" prefWidth="334.0" styleClass="left-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <children>
-                        <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" layoutX="111.0" layoutY="221.0" size="10em" />
-                        <Label layoutX="80.0" layoutY="258.0" text="Shopping Application" textFill="WHITE">
-                            <font>
-                                <Font name="Tahoma" size="20.0" />
-                            </font>
-                        </Label>
-                    </children></AnchorPane>
-                <AnchorPane fx:id="admin_form" layoutX="334.0" prefHeight="478.0" prefWidth="334.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <children>
-                        <FontAwesomeIconView glyphName="USER" layoutX="139.0" layoutY="127.0" size="7em" />
-                        <Label layoutX="95.0" layoutY="151.0" text="Admin Sign In" textFill="#000000d6">
-                            <font>
-                                <Font name="Berlin Sans FB" size="25.0" />
-                            </font>
-                        </Label>
-                        <TextField fx:id="admin_username" layoutX="57.0" layoutY="224.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css" />
-                        <PasswordField fx:id="admin_password" layoutX="57.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
-                        <Button fx:id="admin_loginBtn" layoutX="118.0" layoutY="358.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
-                        <Hyperlink fx:id="admin_hyperlink" layoutX="84.0" layoutY="438.0" onAction="#switchForm" stylesheets="@loginDesign.css" text="Login Customer Account?">
-                            <font>
-                                <Font size="14.0" />
-                            </font>
-                        </Hyperlink>
-                        <Button layoutX="268.0" layoutY="14.0" maxHeight="20.0" maxWidth="15.0" minHeight="20.0" minWidth="15.0" mnemonicParsing="false" onAction="#close" prefHeight="20.0" prefWidth="15.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
-                            <graphic>
-                                <FontAwesomeIconView glyphName="CLOSE" size="1.2em" />
-                            </graphic>
-                        </Button>
-                    </children></AnchorPane>
-                <AnchorPane fx:id="customer_form" layoutX="344.0" layoutY="10.0" prefHeight="478.0" prefWidth="334.0" styleClass="right-form" stylesheets="@loginDesign.css" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <children>
-                        <FontAwesomeIconView glyphName="USER" layoutX="139.0" layoutY="127.0" size="7em" />
-                        <Label layoutX="80.0" layoutY="150.0" text="Customer Sign In" textFill="#000000d6">
-                            <font>
-                                <Font name="Berlin Sans FB" size="25.0" />
-                            </font>
-                        </Label>
-                        <TextField fx:id="customer_username" layoutX="57.0" layoutY="224.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css" />
-                        <PasswordField fx:id="customer_password" layoutX="57.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
-                        <Button fx:id="customer_loginBtn" layoutX="118.0" layoutY="358.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
-                        <Hyperlink fx:id="customer_hyperlink" layoutX="94.0" layoutY="440.0" onAction="#switchForm" stylesheets="@loginDesign.css" text="Login Admin Account?">
-                            <font>
-                                <Font size="14.0" />
-                            </font>
-                        </Hyperlink>
-                        <Button layoutX="268.0" layoutY="14.0" maxHeight="20.0" maxWidth="15.0" minHeight="20.0" minWidth="15.0" mnemonicParsing="false" onAction="#close" prefHeight="20.0" prefWidth="15.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
-                            <graphic>
-                                <FontAwesomeIconView glyphName="CLOSE" size="1.2em" />
-                            </graphic>
-                        </Button>
-                    </children>
-                </AnchorPane>
-            </children>
-        </AnchorPane>
-    </children>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="478.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shopping_application.LoginPageController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="478.0" prefWidth="334.0" styleClass="left-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="SHOPPING_CART" layoutX="111.0" layoutY="221.0" size="10em" />
+                  <Label layoutX="80.0" layoutY="258.0" text="Shopping Application" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="admin_form" layoutX="334.0" prefHeight="478.0" prefWidth="354.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" layoutX="148.0" layoutY="128.0" size="7em" />
+                  <Label layoutX="105.0" layoutY="151.0" text="Admin Sign In">
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="admin_username" layoutX="67.0" layoutY="224.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <PasswordField fx:id="admin_password" layoutX="67.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <Button fx:id="admin_loginBtn" layoutX="127.0" layoutY="357.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                  <Hyperlink fx:id="admin_hyperlink" layoutX="94.0" layoutY="440.0" onAction="#switchForm" stylesheets="@loginDesign.css" text="Login Customer Account?" />
+                  <Button layoutX="268.0" layoutY="14.0" maxHeight="20.0" maxWidth="15.0" minHeight="20.0" minWidth="15.0" mnemonicParsing="false" onAction="#close" prefHeight="20.0" prefWidth="15.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" size="1.2em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="customer_form" layoutX="344.0" layoutY="10.0" prefHeight="478.0" prefWidth="354.0" styleClass="right-form" stylesheets="@loginDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView glyphName="USER" layoutX="148.0" layoutY="128.0" size="7em" />
+                  <Label layoutX="84.0" layoutY="150.0" text="Cuustomer Sign In">
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="customer_username" layoutX="67.0" layoutY="224.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <PasswordField fx:id="customer_password" layoutX="67.0" layoutY="285.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@loginDesign.css" />
+                  <Button fx:id="customer_loginBtn" layoutX="127.0" layoutY="357.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@loginDesign.css" text="Login" />
+                  <Hyperlink fx:id="customer_hyperlink" layoutX="94.0" layoutY="440.0" onAction="#switchForm" stylesheets="@loginDesign.css" text="Login Customer Account?" />
+                  <Button layoutX="268.0" layoutY="14.0" maxHeight="20.0" maxWidth="15.0" minHeight="20.0" minWidth="15.0" mnemonicParsing="false" onAction="#close" prefHeight="20.0" prefWidth="15.0" styleClass="close" stylesheets="@loginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" size="1.2em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
 </StackPane>

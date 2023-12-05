@@ -42,6 +42,6 @@ public class ShoppingApplication extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 }
